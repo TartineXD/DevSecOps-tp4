@@ -2,14 +2,14 @@
 useDefault = true
 # Règle pour détecter les passwords génériques
 [[rules]]
-id = ”generic-password”
-description = ”Password générique dans le code”
-regex = ’’’(?i)(password|passwd|pwd|secret)\s*[=:]\s*[”’][^”’]{6,}[”’]’’’
+id = "generic-password"
+description = "Password générique dans le code"
+regex = '''(?i)(password|passwd|pwd|secret)\s*[=:]\s*["'][^"']{6,}["']'''
 entropy = 2.0
-# Règle pour les variables d’environnement sensibles
+# Règle pour les variables d'environnement sensibles
 [[rules]]
-id = ”env-password”
-description = ”Password dans variable d’environnement”
-regex = ’’’(?i)(DB_PASSWORD|API_SECRET|PRIVATE_KEY)\s*=\s*[”’]?[^”’\s]{6,}[”’]?’’’
+id = "env-password"
+description = "Password dans variable d'environnement"
+regex = '''(?i)(DB_PASSWORD|API_SECRET|PRIVATE_KEY)\s*=\s*["']?[^"'\s]{6,}["']?'''
 entropy = 2.0
 
